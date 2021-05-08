@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>Homepage of Weihao Kong</title>
+  <link rel="stylesheet" href="css/s.css" type="text/css" media="screen, projection"/>
+  <script type="text/x-mathjax-config">
+             MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); 
+        </script>
+        <script type="text/x-mathjax-config">
+             MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], processEscapes: true } }); 
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript" defer async></script>
+</head>
+<body>
+<article>
+  <table width="100%"><tr><td>
+  <img src="img.jpg" alt="Photo" width="267px" height="200px" />&nbsp;</td>
+  <td align="right"><p><font size="6" color="#4682B4">Weihao Kong </font><br />
+  Postdoctoral researcher<br />
+  University of Washington<br />
+  Email: kweihao at gmail dot com<br />
+  </td></tr></table>
+  <section id="intro">
+     <p>I am currently a postdoctoral researcher at University of Washington working with <a class="name" href="https://homes.cs.washington.edu/~sham/">Sham M. Kakade</a>. I recently got my PhD from Stanford University advised by <a class="name" href="http://theory.stanford.edu/~valiant/">Gregory Valiant</a>. My thesis can be found <a href="https://searchworks.stanford.edu/view/13328524">here</a>. I got my bachelor degree from Shanghai Jiao Tong University and did undergraduate research with <a class="name" href="https://cs.nju.edu.cn/lwj/"> Wu-Jun Li</a>.
+      <p> <b>Research interests:</b></p>
+      <ul>
+        <li>Learning from a large number of heterogeneous data sources: A common modern machine learning scenario involves a large amount of data contributed by a large number of heterogeneous data sources, with each data source providing a modest amount of data. <i>How well can we learn in this setting? To what extent can a large number of sources compensate for the lack of data from each source? What is the fundamental limit of learning?</i>
+          This problem has been studied under <i>multi-task learning, meta-learning, federated learning, few-shot learning, empirical Bayesian</i> by different communities.<br>
+          Meta-learning for linear models: [3, 4]; Learning populations of binomial parameters: [5, 7, 12].
+          </li>
+        <li>Estimating learnability: <i>Without enough data to learn a good model for prediction, is it possible to tell whether a good model exists?</i> This is surprisingly possible under linear model assumptions [9]. An analogs question can be asked in the contextual bandits setting: <i>Without enough rounds to learn a good policy, is it possible to estimate the value of the optimal policy</i> [6]? Such techniques can be applied for model selection in contextual bandits <a href="https://arxiv.org/abs/1906.00531">[FKL 19]</a>.</li>
+        <li>Robust machine learning: <i>How to design learning algorithms that are provably robust against a small fraction of malicious data/users?</i> The problem becomes more and more pressing with the advancement of federated learning.<br>
+          Robust and differentially private mean estimation: [1]; Robust meta-learning and robust PCA: [3]; Robust linear regression: [8].
+        </li>
+      </ul>
+      <p> <b>Recent talks:</b></p>
+      <ul>
+        <li>The 2020 Junior Theorists Workshop at Northwestern CS: Meta-Learning for Mixed Linear Regression [<a href="https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=172e48b6-8383-41f3-90b7-aca70177e0f0
+">Video</a>]</i>
+      </ul>
+   </section>
+ </br>
+
+    <table width="100%"><tr><td width="25%" align = "right"><a href="weihaokong_cv.pdf"><font size="5">CV</font></a></td>
+              <td align = "center">&middot;</td>
+        <td width="15%" align = "center"><a href="teaching.html"><font size="5">Teaching</font></a></td>
+        <td align = "center">&middot;</td>
+        <td width="25%" align = "left"><a href="talks.html"><font size="5">Talks</font></a></td>
+        </tr>
+      </table>
+      <hr>
+  <section id="publications">
+    <h1>Publications</h1>
+    <section id="conference_papers">
+
+      <ol>
+        <li>
+        <a href="https://arxiv.org/abs/2102.09159"> Robust and Differentially Private Mean Estimation
+</a><br/> 
+        Xiyang Liu, Weihao Kong, <a class="name" href="https://homes.cs.washington.edu/~sham/">Sham M. Kakade</a>, <a class="name" href="https://homes.cs.washington.edu/~sewoong/">Sewoong Oh</a>.<br/>
+        In submission.
+        <p class="note"> First differentially private robust mean estimation algorithm for high dimensional distributions.</p>
+        </li>
+
+        <li>
+        <a href="https://arxiv.org/abs/2011.09750"> Online Model Selection for Reinforcement Learning with Function Approximation</a><br/> 
+        <a class="name" href="http://jonathannlee.com/">Jonathan N. Lee</a>, <a class="name" href="https://people.eecs.berkeley.edu/~pacchiano/">Aldo Pacchiano</a>, <a class="name" href="http://people.eecs.berkeley.edu/~vidya.muthukumar/">Vidya Muthukumar</a>, Weihao Kong, <a class="name" href="https://cs.stanford.edu/people/ebrun/"> Emma Brunskill</a>.<br/>
+        To appear in AISTATS 2021
+        <p class="note"> A meta-algorithm that adapts to the optimal model complexity with regret bound $\tilde{O}(d_*T^{2/3})$.</p>
+        </li>
+
+      	<li>
+        <a href="https://arxiv.org/abs/2006.09702">Robust Meta-learning for Mixed Linear Regression with Small Batches</a> [<a href="https://youtu.be/XG83U68D39Y">Video</a>]<br/>
+          Weihao Kong, <a class="name" href="https://raghavsomani.github.io/">Raghav Somani</a>, <a class="name" href="https://homes.cs.washington.edu/~sham/">Sham M. Kakade</a>, <a class="name" href="https://homes.cs.washington.edu/~sewoong/">Sewoong Oh</a>.<br/>
+          NeurIPS 2020
+          <p class="note">Smooth time/sample complexity trade-off between the number of tasks and the dataset size of each task. Algorithmic contribution includes an optimal robust PCA algorithm. </p>
+        </li>
+        <li>
+        <a href="https://arxiv.org/abs/2002.08936">Meta-Learning for Mixed Linear Regression</a> [<a href="https://www.youtube.com/watch?v=wGVYlIETwyU">Video</a>]<br/>
+          Weihao Kong, <a class="name" href="https://raghavsomani.github.io/">Raghav Somani</a>, Zhao Song, <a class="name" href="https://homes.cs.washington.edu/~sham/">Sham M. Kakade</a>, <a class="name" href="https://homes.cs.washington.edu/~sewoong/">Sewoong Oh</a>.<br/>
+          ICML 2020
+          <p class="note">First poly time/sample complexity algorithm for $k$-mixture linear regression by utilizing a small set of tasks each with $\tilde{O}(\sqrt{k})$ examples.</p>
+        </li>
+        <li>
+        <a href="https://arxiv.org/abs/1911.12568">Optimal Estimation of Change in a Population of Parameters</a><br/>
+          <a class="name" href="https://ramyakv.github.io/">Ramya Korlakai Vinayak</a>, Weihao Kong, <a class="name" href="https://homes.cs.washington.edu/~sham/">Sham M. Kakade</a>.<br/>
+          Manuscript
+          <p class="note">Estimate the distribution of treatment effects.</p>
+        </li>
+
+        <li>
+        <a href="https://arxiv.org/abs/1912.06111">Sublinear Optimal Policy Value Estimation in Contextual Bandits</a> [<a href="https://youtu.be/75jzv8LMTOw">Video</a>]<br/>
+          Weihao Kong, <a class="name" href="http://theory.stanford.edu/~valiant/">Gregory Valiant</a>, <a class="name" href="https://cs.stanford.edu/people/ebrun/">Emma Brunskill</a>.<br/>
+          AISTATS 2020.
+          <p class="note">Estimate optimal policy value of contextual bandits with $K$ disjoint $d$-dimensional arms in $\tilde{O} (\sqrt{d}K)$ rounds, minimax optimal up to log factors.</p>
+        </li>
+
+        <li>
+        <a href="https://arxiv.org/abs/1902.04553">Maximum Likelihood Estimation for Learning Populations of Parameters</a><br/>
+          <a class="name" href="https://ramyakv.github.io/">Ramya Korlakai Vinayak</a>, Weihao Kong, <a class="name" href="http://theory.stanford.edu/~valiant/">Gregory Valiant</a>, <a class="name" href="https://homes.cs.washington.edu/~sham/">Sham M. Kakade</a>.<br/>
+          ICML 2019.
+          <p class="note">$n$ different coins, each tossed $t$ times, estimate distribution of coin biases with Wasserstein error $O(1/\sqrt{t\log n})$ when $n<2^t$, minimax optimal.</p>
+        </li>
+
+          <li>
+        <a href="https://arxiv.org/abs/1806.00040">Efficient Algorithms and Lower Bounds for Robust Linear Regression</a><br/>
+          <a class="name" href="http://www.iliasdiakonikolas.org/">Ilias Diakonikolas*</a>, Weihao Kong*, <a class = "name" href = "http://www.alistair-stewart.com/">Alistair Stewart*</a>.<br/>
+          SODA 2019
+          <p class="note">Solve $\epsilon$ corrupted linear regression up to $\tilde{O}(\epsilon)$ error under gaussianity assumption, minimax optimal, previous work achieves $\sqrt{\epsilon}$.</p>
+        </li>
+          <li>
+        <a href="https://arxiv.org/abs/1805.01626">Estimating Learnability in the Sublinear Data Regime</a> [<a href="learnability_release.zip">Code</a>]<br/>
+          Weihao Kong, <a class="name" href="http://theory.stanford.edu/~valiant/">Gregory Valiant</a>.<br/>
+          NeurIPS 2018
+          <p class="note">Estimate optimal prediction error of linear regression/classification with $O(\sqrt{d})$ examples, minimax optimal.</p>
+        </li>
+        <li>
+        <a href="https://arxiv.org/abs/1712.01725">Approximating the Spectrum of a Graph</a> [<a href="graph_spectrum_release.zip">Code</a>][<a href="https://www.youtube.com/watch?v=HNne1eki99s">Video</a>]<br/>
+          <a class="name" href="https://www-sop.inria.fr/members/David.Cohen-Steiner/"> David Cohen-Steiner*</a>, Weihao Kong*, <a class="name" href="http://ls2-www.cs.tu-dortmund.de/grav/en/grav_files/people/sohler"> Christian Sohler*</a>, <a class="name" href="http://theory.stanford.edu/~valiant/">Gregory Valiant*</a>.<br/>
+          KDD 2018.
+          <p class="note">Approximate graph Laplacian specturm in constant time.</p>
+        </li>
+        <li>
+      <a href="http://arxiv.org/abs/1602.06586">Recovering Structured Probability Matrices</a><br/> <a class="name" href="http://qingqinghuang.github.io/"> Qingqing Huang*</a>, <a class="name" href="https://homes.cs.washington.edu/~sham/">Sham M. Kakade*</a>, Weihao Kong*, <a class="name" href="http://theory.stanford.edu/~valiant/">Gregory Valiant*</a>.<br/> ITCS 2018.
+        </li>
+        <li>
+      <a href="https://arxiv.org/abs/1709.02707">Learning Populations of Parameters</a> [<a href="https://youtu.be/L82ij8ei8B4">Video</a>]<br/>Kevin Tian, Weihao Kong, <a class="name" href="http://theory.stanford.edu/~valiant/">Gregory Valiant</a>.<br/> 
+        NeurIPS 2017.
+        <p class="note">$n$ different coins, each tossed $t$ times, estimate distribution of coin biases with Wasserstein error $O(1/{t})$ when $n\ge 2^t$, minimax optimal.</p>
+        </li>
+        <li>
+      <a href="http://arxiv.org/abs/1602.00061">Spectrum Estimation from Samples</a> [<a href="estmom.zip">Code</a>]<br/>
+          Weihao Kong, <a class="name" href="http://theory.stanford.edu/~valiant/">Gregory Valiant</a>.<br/>
+          Annals of Statistics, 2017.
+          <p class="note">First algorithm consistently estimates eigenvalues of covariance with $o(d)$ samples.</p>
+        </li>
+        
+
+      <li>
+      <a href="wine2013_submission_144.pdf">Optimal Allocation for Chunked-Reward Advertising</a><br/>
+          Weihao Kong, <a class="name" href="http://iiis.tsinghua.edu.cn/~jianli/"> Jian Li</a>, <a class="name" href="https://www.microsoft.com/en-us/research/people/taoqin/"> Tao Qin</a>, <a class="name" href="https://www.microsoft.com/en-us/research/people/tyliu/">Tie-Yan Liu</a>.<br/>
+          WINE 2013.
+        </li>
+        <li>
+		  <a href="http://papers.nips.cc/paper/4846-isotropic-hashing">Isotropic Hashing </a> [<a href="IsoHash.zip">Code</a>] <br/>
+          Weihao Kong, <a class="name" href="https://cs.nju.edu.cn/lwj/"> Wu-Jun Li</a>.<br/>
+          NeurIPS 2012.[<a href="Isohash_Poster.pdf">Poster</a>]
+        </li>
+		    <li>
+          <a href="http://cs.nju.edu.cn/lwj/paper/SIGIR12_MH.pdf"> Manhattan Hashing for Large-Scale Image Retrieval</a> [<a href="MH.m">Code</a>] <br/>
+		      Weihao Kong, <a class="name" href="https://cs.nju.edu.cn/lwj/"> Wu-Jun Li</a>, <a class="name" href="http://www.cs.sjtu.edu.cn/~guo-my/"> Minyi Guo</a>. <br/>
+          SIGIR 2012. 
+        </li>
+		    <li>
+		  <a href="http://www.aaai.org/ocs/index.php/AAAI/AAAI12/paper/viewFile/5080/5250"> Double-bit quantization for hashing </a> [<a href="DBQ.m">Code</a>] <br/>
+          Weihao Kong, <a class="name" href="https://cs.nju.edu.cn/lwj/"> Wu-Jun Li</a>.<br/>
+          AAAI 2012.
+        </li>
+        
+      </ol>
+      (asterisk indicates alphabetical authorship)
+    </section>  
+  </section>
+</article>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-36968988-2', 'stanford.edu');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
