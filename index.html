@@ -26,13 +26,7 @@
      <p>I am currently a Research Scientist at Google. Previously I was a postdoctoral researcher at University of Washington working with <a class="name" href="https://homes.cs.washington.edu/~sham/">Sham M. Kakade</a>. I got my PhD in 2019 from Stanford University advised by <a class="name" href="http://theory.stanford.edu/~valiant/">Gregory Valiant</a>. My thesis can be found <a href="https://searchworks.stanford.edu/view/13328524">here</a>. I got my bachelor degree from Shanghai Jiao Tong University and did undergraduate research with <a class="name" href="https://cs.nju.edu.cn/lwj/"> Wu-Jun Li</a>.
       <p> <b>Research interests:</b></p>
       <ul>
-        <li>Learning from a large number of heterogeneous data sources: A common modern machine learning scenario involves a large amount of data contributed by a large number of heterogeneous data sources, with each data source providing a modest amount of data. <i>How well can we learn in this setting? To what extent can a large number of sources compensate for the lack of data from each source? What is the fundamental limit of learning?</i>
-          This problem has been studied under <i>multi-task learning, meta-learning, federated learning, few-shot learning, empirical Bayesian</i> by different communities.<br>
-          Meta-learning for linear models: [3, 4]; Learning populations of binomial parameters: [5, 7, 12].
-          </li>
-        <li>Estimating learnability: <i>Without enough data to learn a good model for prediction, is it possible to tell whether a good model exists?</i> This is surprisingly possible under linear model assumptions [9]. An analogs question can be asked in the contextual bandits setting: <i>Without enough rounds to learn a good policy, is it possible to estimate the value of the optimal policy</i> [6]? Such techniques can be applied for model selection in contextual bandits <a href="https://arxiv.org/abs/1906.00531">[FKL 19]</a>.</li>
-        <li>Robust machine learning: <i>How to design learning algorithms that are provably robust against a small fraction of malicious data/users?</i> The problem becomes more and more pressing with the advancement of federated learning.<br>
-          Robust and differentially private mean estimation: [1]; Robust meta-learning and robust PCA: [3]; Robust linear regression: [8].
+        <li>Robust machine learning, differential privacy
         </li>
       </ul>
       <p> <b>Recent talks:</b></p>
@@ -57,10 +51,18 @@
 
       <ol>
         <li>
+        <a href="https://arxiv.org/abs/2111.06578"> Differential Privacy and Robust Statistics in High Dimensions
+</a><br/> 
+        Xiyang Liu, Weihao Kong, <a class="name" href="https://homes.cs.washington.edu/~sewoong/">Sewoong Oh</a>.<br/>
+        To appear in COLT 2022
+        <p class="note"> A general receipe for minimax optimal algorithm (exponential time) on differentially private and robust mean estimation, linear regression, covariance estimation, PCA.</p>
+        </li>
+
+        <li>
         <a href="https://arxiv.org/abs/2102.09159"> Robust and Differentially Private Mean Estimation
 </a><br/> 
         Xiyang Liu, Weihao Kong, <a class="name" href="https://homes.cs.washington.edu/~sham/">Sham M. Kakade</a>, <a class="name" href="https://homes.cs.washington.edu/~sewoong/">Sewoong Oh</a>.<br/>
-        In submission.
+        NeurIPS 2021
         <p class="note"> First differentially private robust mean estimation algorithm for high dimensional distributions.</p>
         </li>
 
@@ -68,7 +70,7 @@
         <a href="https://arxiv.org/abs/2104.11315"> SPECTRE: Defending Against Backdoor Attacks Using Robust Statistics
 </a><br/> 
         Jonathan Hayase, Weihao Kong, <a class="name" href="https://raghavsomani.github.io/">Raghav Somani</a>, <a class="name" href="https://homes.cs.washington.edu/~sewoong/">Sewoong Oh</a>.<br/>
-        To appear in ICML 2021.
+        ICML 2021.
         </li>
 
         <li>
